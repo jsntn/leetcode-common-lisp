@@ -9,3 +9,9 @@
      finally (when (plusp n)
                ;; 自动忽略 nums2 中多余的部分
                (setf (subseq nums1 0 n) nums2))))
+
+;; Test case: nums1 and nums2 are sorted arrays
+(setq nums1 (list 1 2 3 nil nil nil))  ;; Placeholder with space
+(setq nums2 (list 2 5 6))  ;; Sorted nums2
+(merge-88 nums1 3 nums2 3)
+(message "Merged list: %s" nums1)
